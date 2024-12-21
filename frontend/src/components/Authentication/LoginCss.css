@@ -1,0 +1,136 @@
+/* Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    margin: 20px auto;
+    border: 2px solid #E5E5E5;
+  }
+
+  /* Logo */
+
+  .logo-container {
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 25px;
+  }
+
+  .logo-container h3 {
+    color:  #7a37d2;
+  }
+  
+  /* Image Section */
+  .login-image {
+    display: none; /* Hidden on small screens */
+    flex: 1;
+  }
+  
+  .login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Form Section */
+  .login-form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .login-form h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .login-form form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding-right: 2.5rem;
+  }
+  
+  .toggle-visibility {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .login-form form button {
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(to right, #7a37d2, #5c28af);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .login-form form button:hover {
+    opacity: 0.9;
+  }
+  
+  .login-form p {
+    margin-top: 15px;
+    color: #777;
+  }
+  
+  .login-form p a {
+    color: linear-gradient(to right, #7a37d2, #5c28af);
+    text-decoration: none;
+  }
+  
+  .login-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .login-container {
+      flex-direction: row; /* Side-by-side layout for larger screens */
+    }
+  
+    .login-image {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .login-container {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,136 @@
+/* Container */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 2px solid #E5E5E5;
+  }
+
+  /* Logo */
+
+  .logo-container {
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 25px;
+  }
+
+  .logo-container h3 {
+    color:  #7a37d2;
+  }
+  
+  /* Image Section */
+  .signup-image {
+    display: none; /* Hidden on small screens */
+    flex: 1;
+  }
+  
+  .signup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Form Section */
+  .signup-form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .signup-form h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .signup-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .signup-form form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding-right: 2.5rem;
+  }
+  
+  .toggle-visibility {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .signup-form form button {
+    width: 40%;
+    padding: 10px;
+    background: linear-gradient(to right, #7a37d2, #5c28af);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-form form button:hover {
+    opacity: 0.9;
+  }
+  
+  .signup-form p {
+    margin-top: 15px;
+    color: #777;
+  }
+  
+  .signup-form p a {
+    color: linear-gradient(to right, #7a37d2, #5c28af);
+    text-decoration: none;
+  }
+  
+  .signup-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .signup-container {
+      flex-direction: row;      /* Side-by-side layout for larger screens */
+    }
+  
+    .signup-image {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .signup-container {
+      flex-direction: column;
+    }
+  }
+  

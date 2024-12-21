@@ -1,0 +1,22 @@
+.searchbar-container {
+    display: flex;
+    position: relative;
+    height: max-content;
+}
+
+.searchbar-container .search-icon {
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    color: #6b6b6b;
+}
+
+.searchbar-container input {
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 60px;
+    border: 1px solid #a9a9a9;
+    outline: none;
+}
