@@ -16,7 +16,7 @@ const Dashboard = () => {
     try {
       const token = localStorage.getItem("token"); // Assume token is stored in localStorage after login
   
-      const response = await fetch("http://localhost:8080/candidate/getcandidates", {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/candidate/getcandidates`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`, // Add token to the Authorization header
